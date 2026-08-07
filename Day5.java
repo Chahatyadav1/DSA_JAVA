@@ -408,3 +408,39 @@
 //         System.out.println(once(mat));
 //     }
 // }
+
+/**
+ * Day5
+ */
+public class Day5 {
+    public static int[] occurance(int[][] arr) {
+        int totalrow = arr.length;
+        int totalcol = arr[0].length;
+        int row = 0, col = totalcol - 1;
+        int maxcount = 0;
+        int [] ans = new int[2];
+        while (row < totalrow && col >= 0) {
+            if (arr[row][col] == 1) {
+                maxcount = totalcol - col;
+                ans[0]=row;
+                ans[1]=maxcount;
+                col--;
+            } else {
+                row++;
+            }
+        }
+        return ans;
+    }
+
+    public static void main(String[] args) {
+        int[][] mat = {
+                { 0, 1, 1, 1 },
+                { 0, 0, 1, 1 },
+                { 1, 1, 1, 1 },
+                { 0, 0, 0, 0 }
+        };
+        int [] ans= occurance(mat);
+        System.out.println("Row: "+ans[0]);
+        System.out.println("Count: "+ ans[1]);
+    }
+}
