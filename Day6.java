@@ -93,3 +93,117 @@
 //         String a="hello";
 //     }
 // }
+
+/**
+ * Day6
+ */
+// public class Day6 {
+//     public static int display(int[] arr,int n){
+//         if(n==arr.length-1){
+//             return arr[arr.length-1] ;
+//         }
+//         return arr[n]+display(arr,n+1);
+//     }
+//     public static void main(String[] args) {
+//         int [] arr={1,2,3,4,5,6};
+//         int n =arr.length-1;
+//         System.out.println("sum: "+display(arr, 0));
+//     }
+// }
+
+/**
+ * Day6
+ */
+// public class Day6 {
+//     public static void display(int n){
+//         if(n<0){
+//             return;
+//         }
+//         System.out.println(n);
+//         display(n-1);
+//     }
+//     public static void main(String[] args) {
+//         display(5);
+//     }
+// }
+
+/**
+ * Day6
+ */
+// public class Day6 {
+//     public static  int  find(int[] arr , int i,int count,int target){
+//         if(i>=arr.length){
+//             return count;
+//         }
+//         if(arr[i]==target){
+//             count++;
+//         }
+//         int ans=find(arr, i+1, count,target);
+//         return ans;
+//     }
+//     public static void main(String[] args) {
+//         int [] arr= {1,6,3,6,5,6};
+//         int target=6;
+//         System.out.println(find(arr,0,0,target));
+//     }
+// }
+
+/**
+ * Day6
+ */
+// public class Day6 {
+//     public static void display(int n){
+//         if(n==0){
+//             return;
+//         }
+//         display(n/10);
+//         System.out.println(n%10);
+//     }
+//     public static void main(String[] args) {
+//         display(123);
+//     }
+// }
+
+/**
+ * Day6
+ */
+// public class Day6 {
+//     public static int binary(int[] arr ,int l ,int r,int target){
+//         int ans=-1;
+//         if(l<=r){
+//             int mid=l+(r-l)/2;
+//             if(arr[mid]==target){
+//                 return mid;
+//             }
+//             if(arr[mid]>target){
+//                 ans=binary(arr, l, mid-1, target);
+//             }
+//             else{
+//                 ans=binary(arr, mid+1, r, target);
+//             }
+//         }
+//         return ans;
+//     }
+//     public static void main(String[] args) {
+//         int arr[]={1,2,3,5,8};
+//         int target=5;
+//         System.out.println(binary(arr,0, arr.length-1, target));
+//     }
+// }
+
+/**
+ * Day6
+ */
+// public class Day6 {
+
+//     public static void main(String[] args) {
+//         String s ="hello";
+//         s.charAt(0);
+//         char ch = 'a';
+//         StringBuilder a=new StringBuilder();
+//         a.append("ji");
+//         String b=String.valueOf(a);
+//         System.out.println(b);
+//         // s.contains("h");
+//     }
+// }
