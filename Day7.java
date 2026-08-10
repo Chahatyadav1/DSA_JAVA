@@ -117,3 +117,28 @@
 
 //     }
 // }
+
+// import java.util.*;
+
+// /**
+//  * Day7
+//  */
+// public class Day7 {
+//     public static void solve(int[] arr,List<Integer> ans,List<List<Integer>> result,int index){
+//         if(index>=arr.length){
+//             result.add(new ArrayList<>(ans));
+//             return ;
+//         }
+//         ans.add(arr[index]);
+//         solve(arr, ans,result,index+1);
+//         ans.remove(ans.size()-1);
+//         solve(arr, ans,result,index+1);
+//     }
+//     public static void main(String[] args) {
+//         int [] arr={1,2,3};
+//         List<Integer> ans =new ArrayList<>();
+//         List<List<Integer>> result = new ArrayList<>();
+//         solve(arr, ans,result, 0);
+//         System.out.println(result);
+//     }
+// }
