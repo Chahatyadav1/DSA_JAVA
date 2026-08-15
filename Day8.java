@@ -240,3 +240,34 @@ import java.util.*;
 //         }
 //     }
 // }
+
+/**
+ * Day8
+//  */
+// public class Day8 {
+
+//     public static void main(String[] args) {
+//         int[] arr={1,1,2,3,3,4,5,5,4};
+//         int xor=arr[0];
+//         for(int i=1;i<arr.length;i++){
+//             xor^=arr[i];
+//         }
+//         System.out.println(xor);
+//     }
+// }
+
+/**
+ * Day8
+ */
+public class Day8 {
+
+    public static void main(String[] args) {
+        StringBuilder sb=new StringBuilder();
+        sb.append("hello");
+        sb.append(" ");
+        sb.append("world");
+        System.out.println(String.valueOf(sb));
+        String s="hello";
+        s.sub
+    }
+}
