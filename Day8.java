@@ -259,15 +259,15 @@ import java.util.*;
 /**
  * Day8
  */
-public class Day8 {
+// public class Day8 {
 
-    public static void main(String[] args) {
-        StringBuilder sb=new StringBuilder();
-        sb.append("hello");
-        sb.append(" ");
-        sb.append("world");
-        System.out.println(String.valueOf(sb));
-        String s="hello";
+//     public static void main(String[] args) {
+//         StringBuilder sb=new StringBuilder();
+//         sb.append("hello");
+//         sb.append(" ");
+//         sb.append("world");
+//         System.out.println(String.valueOf(sb));
+//         String s="hello";
         
-    }
-}
+//     }
+// }
